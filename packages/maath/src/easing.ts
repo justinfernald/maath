@@ -269,6 +269,8 @@ export function damp4(
   return a4 || b4 || c4 || d4;
 }
 
+type EulerOrder = "XYZ" | "YXZ" | "ZXY" | "ZYX" | "YZX" | "XZY";
+
 /**
  * Euler Damp
  */
@@ -276,7 +278,7 @@ const rot = /*@__PURE__*/ new Euler();
 let aE: boolean, bE: boolean, cE: boolean;
 export function dampE(
   current: Euler,
-  target: [x: number, y: number, z: number, order?: THREE.EulerOrder] | Euler,
+  target: [x: number, y: number, z: number, order?: EulerOrder] | Euler,
   smoothTime?: number,
   delta?: number,
   maxSpeed?: number,
