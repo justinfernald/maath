@@ -242,7 +242,7 @@ const d = determinant2(1, 1, 2, 2);
 Returns the determinant of a passed 3x3 matrix:
 
 ```js
-const d = determinant3(1, 1, 1, 2, 2, 2);
+const d = determinant3(1, 1, 1, 2, 2, 2, 3, 3, 3);
 ```
 
 #### 🪶 determinant4(...matrixInRowMajorOrder) // TBD
